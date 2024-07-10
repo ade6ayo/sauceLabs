@@ -44,7 +44,7 @@ To run the tests:
 - **Selectors**: Update selectors (`[data-test="..."]`) in step definitions according to your application's HTML structure.
 
 ## Project Structure for Specflow Project
-
+```
 sauceLabsAuto/
 ├── Features/
 │   └── OrderTshirts.feature
@@ -57,7 +57,7 @@ sauceLabsAuto/
 ├── sauceLabsAuto.csproj
 ├── Program.cs
 └── README.md
-
+```
 ## Description of Key Files
 OrderTshirts.feature: Contains the BDD feature and scenarios for ordering T-shirts.
 PlaywrightDriver.cs: Initializes and manages the Playwright browser.
@@ -66,6 +66,7 @@ OrderTshirtsSteps.cs: Implements the step definitions for the BDD scenarios.
 Setup and Installation
 Clone the repository:
 
+```
 ## GITbash
 git clone https://github.com/ade6ayo/sauceLabs.git
 cd sauceLabs
