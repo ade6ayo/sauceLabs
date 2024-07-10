@@ -31,7 +31,7 @@ The project includes:
 To run the tests:
 1. Ensure you have .NET SDK installed.
 2. Clone this repository.
-3. Open the solution in Visual Studio or your preferred IDE.
+3. Open the solution in Jetbrains Rider or your preferred IDE.
 4. Use NUnit Test Explorer to execute the SpecFlow tests.
 
 ## Configuration
