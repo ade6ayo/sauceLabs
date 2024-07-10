@@ -1,34 +1,30 @@
-using System;
 using Microsoft.Playwright;
 
 namespace SpecflowAppSauceLabs.Drivers
 {
-    public class Driver
+    public class Driver : IDisposable
     {
-        private readonly Task<IPage> _page;
-        private IBrowser? _browser;
+        private readonly IPlaywright _playwright;
+        private readonly IBrowser _browser;
+        private readonly IPage _page;
 
         public Driver()
         {
-            _page = InitializePlaywright();
-        }
-
-        public IPage Page => _page.Result;
-        
-        private async Task<IPage> InitializePlaywright()
-        {
-            using var playwright = await Playwright.CreateAsync();
-            _browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+            _playwright = Playwright.CreateAsync().GetAwaiter().GetResult();
+            _browser = _playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
                 Headless = false
-            });
-            return await _browser.NewPageAsync();
+            }).GetAwaiter().GetResult();
+            _page = _browser.NewPageAsync().GetAwaiter().GetResult();
         }
+
+        public IPage Page => _page;
 
         public void Dispose()
         {
-            _browser.CloseAsync();
+            _page.CloseAsync().GetAwaiter().GetResult();
+            _browser.CloseAsync().GetAwaiter().GetResult();
+            _playwright.Dispose();
         }
-        
     }
 }

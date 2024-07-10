@@ -1,32 +1,22 @@
 using TechTalk.SpecFlow;
-using Microsoft.Playwright;
+using SpecflowAppSauceLabs.Drivers;
 
 namespace SauceLabsAuto.Hooks
 {
     [Binding]
     public class PlaywrightHooks
     {
-        private readonly Browser browser;
-        private IPage page;
+        private readonly Driver _driver;
 
-        public PlaywrightHooks(Browser browser)
+        public PlaywrightHooks(Driver driver)
         {
-            this.browser = browser;
-        }
-
-        [BeforeScenario]
-        public async Task BeforeScenario()
-        {
-            page = await browser.NewPageAsync();
+            _driver = driver;
         }
 
         [AfterScenario]
-        public async Task AfterScenario()
+        public void AfterScenario()
         {
-            if (page != null)
-            {
-                await page.CloseAsync();
-            }
+            _driver.Dispose();
         }
     }
 }

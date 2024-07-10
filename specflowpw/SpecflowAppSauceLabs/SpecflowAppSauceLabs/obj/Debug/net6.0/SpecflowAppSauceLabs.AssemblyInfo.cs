@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpecflowAppSauceLabs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74dfa3169666ef03bb93753d941159ae4dec48e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed3b48286bda95ef638240d7adbbe97e99925c5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpecflowAppSauceLabs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpecflowAppSauceLabs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

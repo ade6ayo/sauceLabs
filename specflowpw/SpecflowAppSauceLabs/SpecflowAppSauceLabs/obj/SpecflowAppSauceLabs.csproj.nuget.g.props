@@ -13,16 +13,15 @@
     <SourceRoot Include="C:\Users\DELL LATITUDE E7240\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.0.0\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.0.0\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.0.0\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.0.0\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.0.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.0.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.11.0-release-24352-06\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.11.0-release-24352-06\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.11.0-release-24352-06\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.11.0-release-24352-06\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.11.0-release-24352-06\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.11.0-release-24352-06\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props')" />
     <Import Project="$(NuGetPackageRoot)specrun.runner\3.9.7\build\SpecRun.Runner.props" Condition="Exists('$(NuGetPackageRoot)specrun.runner\3.9.7\build\SpecRun.Runner.props')" />
     <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.8\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.8\build\SpecFlow.Tools.MsBuild.Generation.props')" />
     <Import Project="$(NuGetPackageRoot)specrun.specflow.3-9-0\3.9.7\build\SpecRun.SpecFlow.3-9-0.props" Condition="Exists('$(NuGetPackageRoot)specrun.specflow.3-9-0\3.9.7\build\SpecRun.SpecFlow.3-9-0.props')" />
     <Import Project="$(NuGetPackageRoot)specflow.plus.livingdocplugin\3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('$(NuGetPackageRoot)specflow.plus.livingdocplugin\3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\DELL LATITUDE E7240\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
     <PkgSpecRun_Runner Condition=" '$(PkgSpecRun_Runner)' == '' ">C:\Users\DELL LATITUDE E7240\.nuget\packages\specrun.runner\3.9.7</PkgSpecRun_Runner>
     <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\DELL LATITUDE E7240\.nuget\packages\bodi\1.5.0</PkgBoDi>
   </PropertyGroup>
