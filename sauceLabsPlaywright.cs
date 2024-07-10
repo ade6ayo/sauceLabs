@@ -11,40 +11,53 @@ public class OrderTshirts : PageTest
     [Test]
     public async Task OpenIncognitoBrowserAndNavigate()
     {
-        // Create a new Incognito browser context in headed mode with SlowMo
+        // Create a new Incognito browser context in headed mode with task delay till login is successful. --
         // To run in headed mode input the following command on git bash "HEADED=1 dotnet test"
-       
+        
+        // Default timeout for assertions changed to 5000ms from 3000ms
+        Page.SetDefaultTimeout(5000);
+        
+        
         // Navigate to Sauce Labs Webpage
         await Page.GotoAsync("https://www.saucedemo.com/");
+        await Task.Delay(500);
         
         // Click username field
         await Page.Locator("[data-test=\"username\"]").ClickAsync();
+        await Task.Delay(500);
         
         // Fill in the username field with "standard_user"
         await Page.Locator("[data-test=\"username\"]").FillAsync("standard_user");
-
+        await Task.Delay(500);
+        
         // Click the password field
         await Page.Locator("[data-test=\"password\"]").ClickAsync();
-
+        await Task.Delay(500);
+        
         // Invalid test case 
         // Fill in the password field with an incorrect password "secret_apple"
         await Page.Locator("[data-test=\"password\"]").FillAsync("secret_apple");
-
+        await Task.Delay(500);
+        
         // Click the login button
         await Page.Locator("[data-test=\"login-button\"]").ClickAsync();
+        await Task.Delay(500);
         
         // Verification of the error message for the Invalid Test Case using incorrect login credentials
         await Expect(Page.Locator("[data-test=\"error\"]")).ToContainTextAsync("Epic sadface: Username and password do not match any user in this service");
         
         // Fill in the password field with the valid password "secret_sauce"
         await Page.Locator("[data-test=\"password\"]").FillAsync("secret_sauce");
-
+        await Task.Delay(500);
+        
         // Click the login button
         await Page.Locator("[data-test=\"login-button\"]").ClickAsync();
-
+        await Task.Delay(500);
+        
         // Verify login is successful and redirected to homepage
         await Expect(Page).ToHaveURLAsync("https://www.saucedemo.com/inventory.html");
-
+        await Task.Delay(500);
+        
         // Click on the image link of the T-shirt
         await Page.Locator("[data-test=\"item-1-img-link\"]").ClickAsync();
 
