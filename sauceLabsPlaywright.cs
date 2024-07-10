@@ -10,7 +10,7 @@ public class OrderTshirts : PageTest
 
     [Test]
     public async Task OpenIncognitoBrowserAndNavigate()
-    {   // N.B. exclude specflow folder if it shows up before running test file
+    {   // N.B. exclude specflow folder if it shows up before running test file.
         // Create a new Incognito browser context in headed mode with task delay till login is successful. --
         // To run in headed mode input the following command on git bash "HEADED=1 dotnet test"
         
