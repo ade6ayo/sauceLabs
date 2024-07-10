@@ -22,4 +22,16 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="specflowpw\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="specflowpw\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="specflowpw\**" />
+  </ItemGroup>
+
 </Project>
