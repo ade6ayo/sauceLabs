@@ -59,13 +59,13 @@ sauceLabsAuto/
 └── README.md
 ```
 ## Description of Key Files
-OrderTshirts.feature: Contains the BDD feature and scenarios for ordering T-shirts.
-PlaywrightDriver.cs: Initializes and manages the Playwright browser.
-PlaywrightHooks.cs: Contains setup and teardown hooks for the tests.
-OrderTshirtsSteps.cs: Implements the step definitions for the BDD scenarios.
-Setup and Installation
+- OrderTshirts.feature: Contains the BDD feature and scenarios for ordering T-shirts.
+- PlaywrightDriver.cs: Initializes and manages the Playwright browser.
+- PlaywrightHooks.cs: Contains setup and teardown hooks for the tests.
+- OrderTshirtsSteps.cs: Implements the step definitions for the BDD scenarios.
+  
+### Setup and Installation
 Clone the repository:
-
 ```
 ## GITbash
 git clone https://github.com/ade6ayo/sauceLabs.git
