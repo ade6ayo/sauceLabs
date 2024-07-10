@@ -406,3 +406,4 @@ C:\Users\DELL LATITUDE E7240\Desktop\6_\sauceLabs\sauceLabsAuto\obj\Debug\net8.0
 C:\Users\DELL LATITUDE E7240\Desktop\6_\sauceLabs\sauceLabsAuto\obj\Debug\net8.0\sauceLabsAuto.pdb
 C:\Users\DELL LATITUDE E7240\Desktop\6_\sauceLabs\sauceLabsAuto\obj\Debug\net8.0\sauceLabsAuto.genruntimeconfig.cache
 C:\Users\DELL LATITUDE E7240\Desktop\6_\sauceLabs\sauceLabsAuto\obj\Debug\net8.0\ref\sauceLabsAuto.dll
+C:\Users\DELL LATITUDE E7240\Desktop\6_\sauceLabs\sauceLabsAuto\obj\Debug\net8.0\sauceLabsAuto.sourcelink.json
